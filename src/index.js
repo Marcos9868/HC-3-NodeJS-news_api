@@ -7,6 +7,9 @@ const newsRoute = require('./routes/news.route')
 // Innstância Express
 const app = express()
 
+// Configuração Banco de Dados
+const db = require('./db/config')
+
 // Configurações Gerais
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
